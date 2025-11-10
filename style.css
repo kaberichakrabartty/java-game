@@ -1,0 +1,228 @@
+/* ===== GENERAL STYLES ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff0f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 50px 60px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.15);
+  text-align: center;
+}
+
+/* ===== HEADINGS ===== */
+.headingone, .headingtwo {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ff69b4;
+  margin-bottom: 40px;
+}
+
+.wanna {
+  font-size: 60px;
+  font-weight: 700;
+  color: #ff1493;
+  margin: 30px 0;
+  text-shadow: 1px 1px 5px rgba(255, 20, 147, 0.3);
+}
+
+/* ===== INPUTS ===== */
+.inputone, .inputtwo {
+  width: 500px;
+  max-width: 90%;
+  padding: 20px 25px;
+  border-radius: 50px;
+  border: 2px solid #ff69b4;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+
+.inputone:focus, .inputtwo:focus {
+  outline: none;
+  box-shadow: 0 5px 15px rgba(255, 20, 147, 0.3);
+  transform: scale(1.03);
+}
+
+/* ===== BUTTONS ===== */
+.buttonone, .buttontwo, .restartBtn {
+  padding: 15px 35px;
+  border-radius: 50px;
+  border: none;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  background: #ff69b4;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.buttonone:hover, .buttontwo:hover, .restartBtn:hover {
+  background: #ff1493;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(255, 20, 147, 0.3);
+}
+
+/* ===== ERROR MESSAGES ===== */
+.errorone, .errortwo {
+  display: none;
+  background-color: #ff1493;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(255, 20, 147, 0.2);
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0px); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0px); }
+}
+
+/* ===== HEARTS ===== */
+.hearts {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ff1493;
+  transition: all 0.3s ease;
+}
+
+/* ===== TIMER ===== */
+.timer {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ff1493;
+  margin-bottom: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px) {
+  .inputone, .inputtwo {
+    width: 90%;
+    font-size: 28px;
+  }
+  .buttonone, .buttontwo, .restartBtn {
+    width: 80%;
+    font-size: 28px;
+    padding: 12px 20px;
+  }
+  .headingone, .headingtwo {
+    font-size: 36px;
+  }
+  .wanna {
+    font-size: 48px;
+  }
+  .hearts {
+    font-size: 28px;
+  }
+  .timer {
+    font-size: 24px;
+  }
+}
+
+
+
+.inputtwo{
+    display: none;
+}
+.buttontwo{
+    display: none;
+}
+.errortwo{
+    display: none;
+}
+.headingtwo{
+    display: none;
+}
+
+
+@media (max-width: 500px) {
+    .inputone, .inputtwo {
+        width: 90%;         /* shrink inputs */
+        padding: 15px;      /* smaller padding */
+        font-size: 20px;    /* smaller text */
+    }
+
+    .buttonone, .buttontwo, .restartBtn {
+        width: 80%;         /* shrink buttons */
+        font-size: 20px;    /* smaller text */
+        padding: 12px 20px;
+    }
+
+    .headingone, .headingtwo {
+        font-size: 28px;    /* smaller headings */
+    }
+
+    .wanna {
+        font-size: 36px;    /* result text smaller */
+    }
+
+    .hearts {
+        font-size: 24px;    /* hearts smaller */
+    }
+
+    .timer {
+        font-size: 20px;    /* timer smaller */
+    }
+
+    .errorone, .errortwo {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+}
+
+/* Extra for very small screens (<300px) */
+@media (max-width: 300px) {
+    .inputone, .inputtwo {
+        width: 95%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .buttonone, .buttontwo, .restartBtn {
+        width: 90%;
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .headingone, .headingtwo {
+        font-size: 22px;
+    }
+
+    .wanna {
+        font-size: 28px;
+    }
+
+    .hearts {
+        font-size: 20px;
+    }
+
+    .timer {
+        font-size: 16px;
+    }
+
+    .errorone, .errortwo {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+
